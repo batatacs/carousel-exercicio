@@ -4,36 +4,53 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Academia</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <h1>Academia Crossfit</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#cabecalho">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#redesocial">Rede Social</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#saude">Saúde e Bem Estar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <div class="container-fluid">
         <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div data-bs-interval="3000" class="carousel-item active">
                     <img class="d-block w-100"
-                        src="https://cdn.pixabay.com/photo/2022/05/08/10/13/animal-7181776_960_720.jpg" />
-                    <div class="carousel-caption">
-                        <h2>Foto de um gato</h2>
-                    </div>
+                        src="https://blog.allcare.com.br/wp-content/uploads/2022/03/crossfit-820x680.jpg" />
                 </div>
                 <div data-bs-interval="3000" class="carousel-item">
                     <img class="d-block w-100"
-                        src="https://cdn.pixabay.com/photo/2022/08/15/05/23/sun-rays-7387131_960_720.jpg" />
-                    <div class="carousel-caption">
-                        <h2>Foto de um templo</h2>
-                    </div>
+                        src="https://s2-ge.glbimg.com/DlQhSxTMIZyq4LL5JcfTWY_8x9I=/0x0:1280x854/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2019/X/W/TDwrfvS6WgYbtZ1aLAhA/whatsapp-image-2019-04-15-at-14.59.40-1-.jpeg" />
                 </div>
                 <div data-bs-interval="3000" class="carousel-item">
                     <img class="d-block w-100"
-                        src="https://cdn.pixabay.com/photo/2022/08/13/15/42/fish-7383981_960_720.jpg" />
-                    <div class="carousel-caption">
-                        <h2>Foto de um peixei</h2>
-                    </div>
+                        src="https://clinicaconstantino.com.br/wp-content/uploads/2020/10/Saiba-mais-sobre-a-suplementac%CC%A7a%CC%83o-para-crossfit.jpg" />
                 </div>
             </div>
             <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
@@ -49,11 +66,128 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <h1 id="saude">Saúde e Bem Estar</h1>
+        <div class="row">
+            <div class="col-4">
+                <article class="card">
+                    <header class="card-header">
+                        Saúde
+                    </header>
+                    <img src="https://cdn.pixabay.com/photo/2022/07/04/08/01/man-7300624_1280.png" />
+                    <div class="card-body">
+                        <h4 class="card-title">Os benefícios da musculação para a saúde</h4>
+                        <p class="card-text">
+                            A musculação melhora o condicionamento cardiorrespiratório, diminui a quantidade de gordura,
+                            auxilia o emagrecimento, diminui o risco de diabetes, aumenta a autonomia em idosos e
+                            garante mais disposição física.
+                        </p>
+                        <a href="https://www.marinha.mil.br/saudenaval/os-benef%C3%ADcios-da-muscula%C3%A7%C3%A3o-para-sa%C3%BAde"
+                            target="_blank" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>25/05/2023 às 15:00:00</time>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+                        class="card-img" />
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Crossfit: o que é, benefícios e como praticar</h4>
+                        <h5 class="card-subtitle"></h5>
+                        <p class="card-text">
+                            O crossfit é uma modalidade esportiva que tem como objetivo promover melhora da capacidade
+                            cardiorrespiratória, condicionamento físico e resistência muscular por meio da combinação de
+                            exercícios funcionais,
+                        </p>
+                        <a href="https://www.tuasaude.com/crossfit/" target="_blank" class="btn btn-primary">Leia
+                            mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>25/05/2023 às 15:20:00</time>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Saúde
+                    </div>
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYielzjzDqE1a8n44T_GbM_PwhSTN0frh5JEjbjQB8F8ANqns77JfaHhviOQ3sye2v7uU&usqp=CAU" />
+                    <div class="card-body">
+                        <h4 class="card-title">Bem-Estar, Saúde</h4>
+                        <h5 class="card-subtitle">Saiba quais são os benefícios da água para o corpo</h5>
+                        <p class="card-text">
+                            Muitos problemas de saúde podem ser evitados com o hábito de beber água.
+                            É indicado o consumo de no mínimo 2 litros por dia, para assim, manter-se hidratado e com a
+                            pele vistosa. Além disso,
+                            a água é uma forte aliada para quem deseja emagrecer, o seu consumo induz a sensação de
+                            saciedade.
+                        </p>
+                        <a href="https://kozma.com.br/blog/saiba-quais-sao-os-beneficios-da-agua-para-o-corpo/"
+                            target="_blank" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>25/05/2023 às 15:30:00</time>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 id="contato">Fale conosco</h2>
+                <form>
+                    <label class="form-label" for="nome">Seu Nome:</label>
+                    <input class="form-control" type="text" id="nome">
+                    <label for="email" class="form-label">Seu E-mail</label>
+                    <input id="email" type="email" class="form-control">
+                    <label for="telefone" class="form-label">Seu telefone (opcional)</label>
+                    <input type="tel" class="form-control">
+                    <label for="mensagem" class="formlabel">Sua Mensagem</label>
+                    <textarea id="mensagem" class="form-control"></textarea>
+                    <button class="btn btn-success">Enviar</button>
+                </form>
+            </div>
+            <div class="col-md-6 p-5">
+                <div class="row">
+                    <h3 class="h-terciary-color" id="redesocial">Redes Sociais:</h3>
+                    <ul class="social-icons">
+                        <li>
+                            <a href="">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <h3 class="h-terciary-color">Endereço:</h3>
+                    <p>Santa rita do Passa quatro - 13670-000 </p>
+                </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p class="copy">&copy;Anderson Camilo</p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 </body>
 
 </html>
-
-
